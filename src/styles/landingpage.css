@@ -3,8 +3,9 @@
     margin: auto;
     justify-content: center;
     align-items: center;
+    font-size: 1.25rem;
     padding: 4rem;
-    gap: 4rem;
+
     background-image: url("./../assets/headway-confrence.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,8 +13,27 @@
     min-height: 100vh;
     color: #ffffff;
     backdrop-filter: blur(2px);
+    @media screen and (max-width:700px) {
+            flex-direction: column;
+    
+        }
 }
 
-.app__landing-page--cta {
-    color: coral;
-}
+.app__landing-page--cta button {
+    background-color: rgb(236, 69, 8);
+    }
+    
+    .app__landing-page--cta h1 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bolder;
+    }
+                .app__landing-page--cta,
+                .app__landing-page--about {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1;
+        
+                }
