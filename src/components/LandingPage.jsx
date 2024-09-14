@@ -1,12 +1,16 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom"
 
 const LandingPage = () => {
+    const navigate = useNavigate()
+    const handleSubmit = () => {
+        navigate("/home", { replace: true })
+    }
     return (
         <section className='app__landing-page'>
-            <div className='app_landing-page--cta'>
+            <div className='app__landing-page--cta'>
                 <h1>Conference Expense Planner</h1>
-                <h5>Plan your next meeting</h5>
-                <button>Get Started</button>
+                <h6>Plan your next meeting</h6>
+                <button onClick={handleSubmit}>Get Started</button>
             </div>
             <div className='app__landing-page--about'>
                 <p>About Us
