@@ -1,0 +1,19 @@
+.app__landing-page {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 4rem;
+    background-image: url("./../assets/headway-confrence.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    color: #ffffff;
+    backdrop-filter: blur(2px);
+}
+
+.app__landing-page--cta {
+    color: coral;
+}
