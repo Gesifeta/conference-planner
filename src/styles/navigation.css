@@ -1,0 +1,47 @@
+.app__navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: #042750;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+}
+
+.app__navigation-services {
+
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.app__navigation span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    
+
+}
+
+.service.active {
+    background-color: #4f8bcf;
+    outline-color: coral;
+}
+
+.app__navigation span:hover {
+    background-color: rgb(231, 235, 233);
+    color: rgb(100, 99, 99);
+}
+
+.app__navigation-logo {
+    color: coral;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.app__navigation-detail {
+    background-color: coral;
+    font-weight: bold;
+}
